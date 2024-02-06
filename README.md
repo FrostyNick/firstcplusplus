@@ -2,11 +2,19 @@ Compile and execute this to try out the program.
 
 # Compile
 
-This assumes you're in the correct directory and you have `g++` installed and in your path.
+This assumes you're in the correct directory and you have `g++` or `gcc` installed and in your path.
 
+`g++`
 ```bash
-g++ first-code.cpp -o nameOfYourFile.exe # .exe is not needed on linux
+g++ first-code.cpp -o nameOfYourFile.exe
 ```
+
+`gcc`
+```bash
+gcc -x c++ first-code.cpp -lstdc++ -o nameOfYourFile.exe
+```
+
+Note: `.exe` is not needed if you don't need to double click it. Also this is just for Windows.
 
 # Execute
 
